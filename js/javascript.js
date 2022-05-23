@@ -1,4 +1,5 @@
-let generoUsuario;
+// Variables
+let generoUsuario = prompt("Necesito saber para poder calcular tu IMC si eres Hombre o Mujer?").toLowerCase();
 let alturaEnCentimetros= parseInt(prompt("Cual es tu altura en cm?"));
 let alturaEnMetros = alturaEnCentimetros / 100;
 let pesoFinal = parseInt(prompt("Cual es tu peso en kg?"));  
@@ -9,7 +10,7 @@ let dato = alert("Recorda la expectativa de vida en Argetina es de: 80 años par
 let edadFinal;
 let obesidad1;
 
-
+// Funciones
 
 function expectativaDeVida (edadFinal, edad){
     
@@ -22,9 +23,8 @@ function vidaObesidad (calculoDeVida, obesidad1){
 }
 
 
-do{
-    generoUsuario = prompt("Necesito saber para poder calcular tu IMC si eres Hombre o Mujer?").toLowerCase();
-}
+// Ciclo While - switch 
+    
 while (generoUsuario === "hombre" && generoUsuario === "mujer"){
     
     switch (generoUsuario){
