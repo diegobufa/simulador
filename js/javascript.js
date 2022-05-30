@@ -6,14 +6,14 @@ function simulador(){
     
     eleccion = prompt("Quieres utilizar el simulador debes contestar SI o NO ?").toUpperCase();
    while(eleccion != "NO"){
-       console.log(eleccion);
+       
       if(eleccion === "SI"){
           simuladorImc();
       }else{
           alert("No has elejido una opcion valida");
           simulador();
       }
-   }
+   }alert("Fin del simulador.");
 }
 
 // Llamada a la funcion
